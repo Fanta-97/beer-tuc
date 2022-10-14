@@ -1,6 +1,6 @@
-#gallery .col-lg-4 {
-
-  padding: 25px;
+#gallery .col-lg-3 {
+margin: 0;
+  padding: 20px;
 }
 #gallery img {
   width: 100%;
@@ -14,3 +14,6 @@
   margin: 15px;
 }
 
+#gallery img:hover{
+  border: 5px solid rgb(217, 201, 27, 0.1);
+}
