@@ -21,11 +21,53 @@
   <title>Beer Tuc</title>
 </head>
 <body>
-    <footer>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <section class="container px-4 py-2">
+
+      <!-- TENEMOS 2 TIPOS DE LOGOS: LOGO RESPONSIVE Y LOGO DESKTOP, DEPENDIENDO DEL ANCHO DE PANTALLA SE MOSTRARA UNO Y SE OCULTARA EL OTRO -->
+      <a class="navbar-brand d-md-none d-lg-none" href="#">
+        <img src="../images/logo/logo-responsive.png" alt="logo" class="logo-responsive img-fluid">
+      </a>
+
+      <a class="navbar-brand d-sm-none d-md-inline d-lg-inline" href="#">
+        <img src="../images/logo/logo-desktop.png" alt="logo" class="logo-desktop img-fluid">
+      </a>
+      <button class="navbar-toggler hamburguer-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list hamburguer-icon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto g-3">
+          <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
+            <a class="nav-link fs-5 active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
+            <a class="nav-link fs-5" href="#">Suscripción</a>
+          </li>
+          <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
+            <a class="nav-link fs-5" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
+            <a class="nav-link fs-5" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item ms-4 text-center nav-item-login mb-sm-3">
+            <a class="nav-link fs-5" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+      </nav>
+
+      <footer>
         <article class="row pb-2">
             <section class="col-12 col-md-4 col-lg-4">
                 <div class="center pt-4">
-                <a href="#"><img src="./images/footer/LOGO_BEER_TUC.png" alt="LOGO_BEER_TUC" class="log"></a>
+                <a href="#"><img src="../images/footer/LOGO_BEER_TUC.png" alt="LOGO_BEER_TUC" class="log"></a>
                 </div>
             </section>
             <section class="col-12 col-md-4 col-lg-4 text-center pt-5 pb-5 pe-5 ps-5">
