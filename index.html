@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/animaciones-efectos.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <title>Beer Tuc</title>
 </head>
 
@@ -50,8 +51,40 @@
               <a class="nav-link fs-5 active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
-              <a class="nav-link fs-5" href="#">Suscripción</a>
+              <button class="btn btn-lg btn-outline-dark border-0 nav-link" data-bs-toggle="modal" data-bs-target="#suscribirse">
+                Suscribirse
+              </button>
             </li>
+            <div class="modal fade form-register" id="suscribirse" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center"  id="registerLabel">SUSCRIBITE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-register">
+                      
+                      <input class="controls col-12 mb-4" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                      <input class="controls col-12 mb-4" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                      <input class="controls col-12 mb-4" type="email" name="correo" id="correo" placeholder="example@gamil.com">
+                      <input class="controls col-12 mb-4" type="password" name="password" id="password" placeholder="password">
+                      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Recibir notificaciones por e-mail
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <p><a href="#">Ya tengo Cuenta</a></p>
+                    <button type="button" class="btn btn-primary">Suscribirse</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
               <a class="nav-link fs-5" href="#">Contactanos</a>
             </li>
@@ -66,6 +99,7 @@
       </section>
     </nav>
     <!-- CARRUSEL -->
+    <main>
     <section id="carrusel-bares" class="carousel slide carrusel-container" data-bs-ride="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carrusel-bares" data-bs-slide-to="0" class="active" aria-current="true"
@@ -367,6 +401,7 @@
       </div>
     </article>
   </section>
+  </main>
   <footer>
     <article class="row pb-2">
         <section class="col-12 col-md-4 col-lg-4">
