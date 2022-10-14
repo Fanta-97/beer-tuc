@@ -29,13 +29,15 @@
       <section class="container px-4 py-2">
 
         <!-- TENEMOS 2 TIPOS DE LOGOS: LOGO RESPONSIVE Y LOGO DESKTOP, DEPENDIENDO DEL ANCHO DE PANTALLA SE MOSTRARA UNO Y SE OCULTARA EL OTRO -->
-        <a class="navbar-brand d-md-none d-lg-none" href="#">
+        <a class="navbar-brand d-lg-none" href="#">
           <img src="./images/logo/logo-responsive.png" alt="logo" class="logo-responsive img-fluid">
         </a>
 
-        <a class="navbar-brand d-sm-none d-md-inline d-lg-inline" href="#">
+        <a class="navbar-brand d-none d-lg-flex" href="#">
           <img src="./images/logo/logo-desktop.png" alt="logo" class="logo-desktop img-fluid">
         </a>
+
+        
         <button class="navbar-toggler hamburguer-button" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -74,17 +76,17 @@
       <section class="carousel-inner carousel-inner-customizable h-sm-50">
         <article class="carousel-item active carousel-item-customizable">
           <figure class="carousel-figure-customizable">
-            <img src="./images/bares/antares.png" alt="antares" class="carousel-img-customizable img-fluid">
+            <img src="./images/bares/antares-dark.png" alt="antares" class="carousel-img-customizable img-fluid">
           </figure>
         </article>
         <article class="carousel-item carousel-item-customizable">
           <figure class="carousel-figure-customizable">
-            <img src="./images/bares/porter.png" alt="porter" class="carousel-img-customizable img-fluid">
+            <img src="./images/bares/porter-dark.png" alt="porter" class="carousel-img-customizable img-fluid">
           </figure>
         </article>
         <article class="carousel-item carousel-item-customizable">
           <figure class="carousel-figure-customizable">
-            <img src="./images/bares/penon.png" alt="porter" class="carousel-img-customizable img-fluid">
+            <img src="./images/bares/penon-dark.png" alt="porter" class="carousel-img-customizable img-fluid">
           </figure>
         </article>
       </section>
@@ -101,7 +103,7 @@
     </section>
   </header>
   <!-- CARDS -->
-   <section class=" d-flex justify-content-center">
+   <!-- <section class=" d-flex justify-content-center">
     <article>
       <div class="card" style="width: 22rem;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -272,16 +274,16 @@
         </div>
       </div>
     </article>
-  </section>
+  </section> -->
+
+  
+
 
 
   <!-- SECCION DE COMENTARIOS -->
-
-
-
-  <section class="container bg-dark border border-primary border-5 p-3 text-light">
+  <section class="container my-5 p-3 text-light seccion-comentarios">
     <h2 class="container pb-3 border-bottom">Comentarios</h2>
-    <form>
+    <form class="mb-4">
       <div class="form-group col-md-12">
         <textarea class="form-control" placeholder="Ingresa un comentario" rows="5" required></textarea>
         <button type="submit" class="btn btn-warning text-dark my-3 w-100">Enviar</button>

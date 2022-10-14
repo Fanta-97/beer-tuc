@@ -1,17 +1,10 @@
-
-
-
-
-
-
 body {
   font-family: "Open Sans", sans-serif;
   
   background: #FDC830;  
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
   background: linear-gradient(to right, #F37335, #FDC830); 
-  
-  
+  overflow-x: hidden; 
 }
 
 .logo-responsive{
@@ -29,7 +22,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0);
   position: fixed;
   top: 0;
   z-index: 250000;
@@ -61,6 +54,13 @@ body {
 .img-profile {
   border-radius: 50%;
 }
+
+
+.seccion-comentarios {
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .carrusel-container { 
     min-height: 100vh;
