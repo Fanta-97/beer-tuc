@@ -1,0 +1,47 @@
+.featurette-divider {
+    margin: 4rem 0; 
+    color: #212f4a;
+  
+  }
+  .text-muted{ 
+    color:#212f4a;
+    font-family: Helvetica;
+  }
+  
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  .image img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+  
+  .dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+ 
+@media (min-width: 40em) {
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+    .dos {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;  
+  }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 5rem;
+    }
+    .dos {
+      display: flex;
+      flex-direction:row;
+      justify-content: center;  
+  }
+}
