@@ -1,4 +1,10 @@
+main {
+  min-height: 80vh;
+}
 
+footer {
+  min-height: 20vh;
+}
   
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;

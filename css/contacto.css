@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.main-contacto {
+  min-height: 80vh;
+  height: 80vh;
+}
+
+.footer-contacto {
+  min-height: 20vh;
+  height: 20vh;
+}
+
 .form-register {
   padding: 30px;
   margin: auto;
