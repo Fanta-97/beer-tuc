@@ -11,7 +11,7 @@
     content="Un blog para conocer los mejores destinos nocturnos de Tucumán en cuanto a bares se refiere, donde podran descubrir no solo las mejores cervezas de la region, sino también un conjunto de sensaciones para el disfrute de la gente">
   <meta name="keywords" content="cerveza, Tucumán, noche, salir, bar, joda, vacia, happy hour, precio, economico">
   <link rel="shortcut icon" href="./images/logo/logo-responsive.png" type="image/x-icon">
- 
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -25,7 +25,6 @@
 
 <body>
   <header class="header">
-
     <nav class="navbar navbar-expand-lg navbar-dark">
       <section class="container px-4 py-2">
         <a class="navbar-brand d-lg-none" href="#">
@@ -47,25 +46,32 @@
               <a class="nav-link fs-5 active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
-              <button class="boton btn btn-lg btn-outline-dark border-0 mx-sm-auto nav-link fs-5 active d-flex" data-bs-toggle="modal" data-bs-target="#suscribirse">
+              <button class="boton btn btn-lg border-0 nav-link fs-5 active d-flex mx-auto" data-bs-toggle="modal"
+                data-bs-target="#suscribirse">
                 Suscribirse
               </button>
             </li>
-            <div class="modal fade form-register" id="suscribirse" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+            <div class="modal fade form-register" id="suscribirse" tabindex="-1" aria-labelledby="registerLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content text-center bg-dark">
                   <div class="modal-header">
-                    <h5 class="modal-title mx-auto text-warning fw-bold"  id="registerLabel">SUSCRIBITE</h5>
+                    <h5 class="modal-title mx-auto text-warning fw-bold" id="registerLabel">SUSCRIBITE</h5>
                     <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <form class="form-register">
-                      <input class="controls col-12 mb-4 text-light" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                      <input class="controls col-12 mb-4 text-light" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-                      <input class="controls col-12 mb-4 text-light" type="email" name="correo" id="correo" placeholder="example@gamil.com">
-                      <input class="controls col-12 mb-4 text-light" type="password" name="password" id="password" placeholder="password">
-                      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-                      <div class="form-check text-light">
+                      <input class="controls col-12 mb-4 p-3 fs-5 text-light" type="text" name="nombres" id="nombres"
+                        placeholder="Ingrese su Nombre">
+                      <input class="controls col-12 mb-4 p-3 fs-5 text-light" type="text" name="apellidos"
+                        id="apellidos" placeholder="Ingrese su Apellido">
+                      <input class="controls col-12 mb-4 p-3 fs-5 text-light" type="email" name="correo" id="correo"
+                        placeholder="example@gamil.com">
+                      <div class="form-check text-light text-start mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="text-light">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></label>
+                      </div>
+                      <div class="form-check text-light text-start">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Recibir notificaciones por e-mail
@@ -73,7 +79,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class="modal-footer">
+                  <div class="modal-footer d-flex justify-content-center">
                     <p><a href="#">Ya tengo Cuenta</a></p>
                     <button type="button" class="btn btn-warning">Suscribirse</button>
                   </div>
@@ -94,7 +100,6 @@
       </section>
     </nav>
     <!-- CARRUSEL -->
-    <main>
     <section id="carrusel-bares" class="carousel slide carrusel-container" data-bs-ride="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carrusel-bares" data-bs-slide-to="0" class="active" aria-current="true"
@@ -131,9 +136,10 @@
       </a>
     </section>
   </header>
-  <!-- CARDS -->
- <section class="row p-3">
-  <article class="card mx-2 col-lg-2">
+  <main class="container">
+    <!-- CARDS -->
+    <section class="row p-3">
+      <article class="card mx-2 col-lg-2">
         <img class="card-img-top" src="./images/tbc/tbc-logo.png" alt="Cerveceria TBC">
         <div class="card-body">
           <h4 class="card-title text-black"><strong>TBC</strong></h4>
@@ -149,206 +155,211 @@
 
           </p>
           <button class="entrance button-items-art btn-dark btn-lg">
-          <a class="text-light" href="./pages/tbc.html">Ver Galeria de Imagenes</a></button>
+            <a class="text-light" href="./pages/tbc.html">Ver Galeria de Imagenes</a></button>
           <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-  </article>
+      </article>
 
-<article class="card mx-2 col-lg-2">
-  <img class="card-img-top" src="./images/porter/porter-logo.png" alt="Cerveceria PORTER">
-  <div class="card-body">
-    <h4 class="card-title text-black"><strong>PORTER BREW HOUSE</strong></h4>
-    <p class="card-text text-black">1ra CERVECERÍA ARTESANAL de TUCUMAN.<br> <br>
-      <strong> <u>PORTER BARRIO NORTE</u></strong><br>
-      Ildefonso de las Muñecas 749, San Miguel de Tucumán.<br>
-    
-      <strong> <u>PORTER YERBA BUENA</u></strong><br>
-      Av. Perón 1800 CITY PLACE, Yerba Buena, Tucumán.<br>
-     
-    </p>
-    <button class="entrance button-items-art btn-dark btn-lg">
-      <a class="text-light" href="./pages/porter.html">Ver Galeria de Imagenes</a></button>
-      <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-</article>
-<article class="card mx-2 col-lg-2">
-  <img class="card-img-top" src="./images/craft/craft-logo.png" alt="Cerveceria CRAFT">
-  <div class="card-body">
-    <h4 class="card-title text-black"><strong>CRAFT</strong></h4>
-    <p class="card-text text-black">FOOD,DRINK AND MUSIC.<br> <br>
-      <strong> <u>CRAFT BARRIO NORTE</u></strong><br>
-      25 de Mayo 724, San Miguel de Tucumán.<br>
-      <strong> <u>CRAFT BARRIO SUR</u></strong><br>
-      Buenos Aires 294, San Miguel de Tucumán.<br>
-      <strong> <u>CRAFT YERBA BUENA</u></strong><br>
-      Av. Perón 2000, Yerba Buena, Tucumán.<br>
-      <strong> <u>CRAFT TAFI VIEJO</u></strong><br>
-      Av. Constitución 2400, Tafí Viejo, Tucumán.
+      <article class="card mx-2 col-lg-2">
+        <img class="card-img-top" src="./images/porter/porter-logo.png" alt="Cerveceria PORTER">
+        <div class="card-body">
+          <h4 class="card-title text-black"><strong>PORTER BREW HOUSE</strong></h4>
+          <p class="card-text text-black">1ra CERVECERÍA ARTESANAL de TUCUMAN.<br> <br>
+            <strong> <u>PORTER BARRIO NORTE</u></strong><br>
+            Ildefonso de las Muñecas 749, San Miguel de Tucumán.<br>
 
-    </p>
-    <button class="entrance button-items-art btn-dark btn-lg">
-      <a class="text-light" href="./pages/craft.html">Ver Galeria de Imagenes</a></button>
-      <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-</article>
-<section class="col-lg-5 ">
-  <div class="card-header bg-dark text-white" style="background-color:#C4ABA4 ;">Buscar</div>
-  <section class="card-body" style="background-color: #CAABA4 ;">
-    <div class="input-group">
-      <input class="form-control" type="text" placeholder="Busca tu Cerveceria..." aria-label="enter search term... " aria-describedby="button-search">
-      <a class="btn btn-dark text-white" href="#" role="button">Ver mas</a>
+            <strong> <u>PORTER YERBA BUENA</u></strong><br>
+            Av. Perón 1800 CITY PLACE, Yerba Buena, Tucumán.<br>
 
-    </div>
-  
-  </section>
-<article>
-  <div class="mb-4 d-flex row align-items-center justify-content-center ">
-    
-<div class="mb-4 p-3">
-  
-  <a href="./pages/error404.html" target="_blank">
-    <img src="./images/porter/porter01.jfif" alt="anuncio-pedidos-ya" class="img-fluid d-none  d-lg-block d-sm-block d-sm-none">
-  </a>
-</article>
-<div class="nuestros-blogs">
-  <h4 class="d-flex d-flex align-items-center justify-content-center">CATEGORIAS</h4>
-  <ul class="lista-blogs ps-0 d-flex flex-column align-items-center justify-content-center" >
-    <li class="py-1">
-      <button class="button-items btn-dark btn-lg">
-        <a class="items-blogs" href="./pages/tbc.html">TBC</a>
-      </button>
-    </li>
-    <li class="py-1">
-      <button class="button-items btn-dark btn-lg">
-        <a class="items-blogs" href="./pages/dot.html">DOT BAR</a>
-      </button>
-    </li>
-    <li class="py-1">
-      <button class="button-items btn-dark btn-lg">
-        <a class="items-blogs" href="./pages/craft.html">CRAFT</a>
-      </button>
-    </li>
-    <li class="py-1">
-      <button class="button-items btn-dark btn-lg">
-        <a class="items-blogs" href="./pages/porter.html">PORTER BREW HOUSE</a>
-      </button>
-    </li>
-  
-  </ul>
-</div>
-</div>  
-</div>
-</div>
-  </section>
+          </p>
+          <button class="entrance button-items-art btn-dark btn-lg">
+            <a class="text-light" href="./pages/porter.html">Ver Galeria de Imagenes</a></button>
+          <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </article>
+      <article class="card mx-2 col-lg-2">
+        <img class="card-img-top" src="./images/craft/craft-logo.png" alt="Cerveceria CRAFT">
+        <div class="card-body">
+          <h4 class="card-title text-black"><strong>CRAFT</strong></h4>
+          <p class="card-text text-black">FOOD,DRINK AND MUSIC.<br> <br>
+            <strong> <u>CRAFT BARRIO NORTE</u></strong><br>
+            25 de Mayo 724, San Miguel de Tucumán.<br>
+            <strong> <u>CRAFT BARRIO SUR</u></strong><br>
+            Buenos Aires 294, San Miguel de Tucumán.<br>
+            <strong> <u>CRAFT YERBA BUENA</u></strong><br>
+            Av. Perón 2000, Yerba Buena, Tucumán.<br>
+            <strong> <u>CRAFT TAFI VIEJO</u></strong><br>
+            Av. Constitución 2400, Tafí Viejo, Tucumán.
 
+          </p>
+          <button class="entrance button-items-art btn-dark btn-lg">
+            <a class="text-light" href="./pages/craft.html">Ver Galeria de Imagenes</a></button>
+          <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </article>
+      <section class="col-lg-5 ">
+        <div class="card-header bg-dark text-white" style="background-color:#C4ABA4 ;">Buscar</div>
+        <section class="card-body" style="background-color: #CAABA4 ;">
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="Busca tu Cerveceria..."
+              aria-label="enter search term... " aria-describedby="button-search">
+            <a class="btn btn-dark text-white" href="#" role="button">Ver mas</a>
 
+          </div>
 
+        </section>
+        <article>
+          <div class="mb-4 d-flex row align-items-center justify-content-center ">
 
-  <!-- SECCION DE COMENTARIOS -->
-  <section class="container my-5 p-3 text-light seccion-comentarios">
-    <h2 class="container pb-3 border-bottom">Comentarios</h2>
-    <form class="mb-4">
-      <div class="form-group col-md-12">
-        <textarea class="form-control" placeholder="Ingresa un comentario" rows="5" required></textarea>
-        <button type="submit" class="btn btn-warning text-dark my-3 w-100">Enviar</button>
-      </div>
-    </form>
-    <article class="d-flex">
-      <figure>
-        <img src="./images/avatares/la-mona-gimenez.jpg" alt="imagen de perfil" class="img-fluid img-profile"
-          width="64">
-      </figure>
-      <div class="ps-4">
-        <h4>La Mona Gimenez</h4>
-        <p>Vamo a toma un vino que se funda</p>
-        <ul class="list-unstyled text-muted d-flex">
-          <li class="pe-3">Me Gusta</li>
-          <li>Responder</li>
-        </ul>
-      </div>
-    </article>
+            <div class="mb-4 p-3">
+
+              <a href="./pages/error404.html" target="_blank">
+                <img src="./images/porter/porter01.jfif" alt="anuncio-pedidos-ya"
+                  class="img-fluid d-none  d-lg-block d-sm-block d-sm-none">
+              </a>
+        </article>
+        <div class="nuestros-blogs">
+          <h4 class="d-flex d-flex align-items-center justify-content-center">CATEGORIAS</h4>
+          <ul class="lista-blogs ps-0 d-flex flex-column align-items-center justify-content-center">
+            <li class="py-1">
+              <button class="button-items btn-dark btn-lg">
+                <a class="items-blogs" href="./pages/tbc.html">TBC</a>
+              </button>
+            </li>
+            <li class="py-1">
+              <button class="button-items btn-dark btn-lg">
+                <a class="items-blogs" href="./pages/dot.html">DOT BAR</a>
+              </button>
+            </li>
+            <li class="py-1">
+              <button class="button-items btn-dark btn-lg">
+                <a class="items-blogs" href="./pages/craft.html">CRAFT</a>
+              </button>
+            </li>
+            <li class="py-1">
+              <button class="button-items btn-dark btn-lg">
+                <a class="items-blogs" href="./pages/porter.html">PORTER BREW HOUSE</a>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>
 
 
 
 
-    <article class="d-flex">
-      <figure>
-        <img src="./images/avatares/pichu.jpg" alt="imagen de perfil" class="img-fluid img-profile" width="64">
-      </figure>
-      <div class="ps-4">
-        <h4>Pichu Straneo</h4>
-        <p>paiu paiu paiu </p>
-        <ul class="list-unstyled text-muted d-flex">
-          <li class="pe-3">Me Gusta</li>
-          <li>Responder</li>
-        </ul>
-      </div>
-    </article>
+      <!-- SECCION DE COMENTARIOS -->
+      <section class="container my-5 p-3 text-light seccion-comentarios">
+        <h2 class="container pb-3 border-bottom">Comentarios</h2>
+        <form class="mb-4">
+          <div class="form-group col-md-12">
+            <textarea class="form-control" placeholder="Ingresa un comentario" rows="5" required></textarea>
+            <button type="submit" class="btn btn-warning text-dark my-3 w-100">Enviar</button>
+          </div>
+        </form>
+        <article class="d-flex">
+          <figure>
+            <img src="./images/avatares/la-mona-gimenez.jpg" alt="imagen de perfil" class="img-fluid img-profile"
+              width="64">
+          </figure>
+          <div class="ps-4">
+            <h4>La Mona Gimenez</h4>
+            <p>Vamo a toma un vino que se funda</p>
+            <ul class="list-unstyled text-muted d-flex">
+              <li class="pe-3">Me Gusta</li>
+              <li>Responder</li>
+            </ul>
+          </div>
+        </article>
 
 
 
-    <article class="d-flex">
-      <figure>
-        <img src="./images/avatares/fan-de-wanda.jpg" alt="imagen de perfil" class="img-profile" width="64" height="64">
-      </figure>
-      <div class="ps-4">
-        <h4>El Fan de Wanda</h4>
-        <p>Salgamos con L-Gante por favor WANDAAAAAAAAAAAAAAAA</p>
-        <ul class="list-unstyled text-muted d-flex">
-          <li class="pe-3">Me Gusta</li>
-          <li>Responder</li>
-        </ul>
-      </div>
-    </article>
 
-    <article class="d-flex">
-      <figure>
-        <img src="./images/avatares/oficial-gordillo.jpg" alt="imagen de perfil" class="img-profile" width="64"
-          height="64">
-      </figure>
-      <div class="ps-4">
-        <h4>Oficial Gordillo</h4>
-        <p>La calor que esta haciendo compadre hay que meterle un porron si o si</p>
-        <ul class="list-unstyled text-muted d-flex">
-          <li class="pe-3">Me Gusta</li>
-          <li>Responder</li>
-        </ul>
-      </div>
-    </article>
+        <article class="d-flex">
+          <figure>
+            <img src="./images/avatares/pichu.jpg" alt="imagen de perfil" class="img-fluid img-profile" width="64">
+          </figure>
+          <div class="ps-4">
+            <h4>Pichu Straneo</h4>
+            <p>paiu paiu paiu </p>
+            <ul class="list-unstyled text-muted d-flex">
+              <li class="pe-3">Me Gusta</li>
+              <li>Responder</li>
+            </ul>
+          </div>
+        </article>
 
-    <article class="d-flex">
-      <figure>
-        <img src="./images/avatares/mirtha-legrand.jpg" alt="imagen de perfil" class="img-profile" width="64"
-          height="64">
-      </figure>
-      <div class="ps-4">
-        <h4>Mirtha Legrand</h4>
-        <p>La cerveza de peñon me recuerda a las giras que me pegaba con Colon </p>
-        <ul class="list-unstyled text-muted d-flex">
-          <li class="pe-3">Me Gusta</li>
-          <li>Responder</li>
-        </ul>
-      </div>
-    </article>
-  </section>
+
+
+        <article class="d-flex">
+          <figure>
+            <img src="./images/avatares/fan-de-wanda.jpg" alt="imagen de perfil" class="img-profile" width="64"
+              height="64">
+          </figure>
+          <div class="ps-4">
+            <h4>El Fan de Wanda</h4>
+            <p>Salgamos con L-Gante por favor WANDAAAAAAAAAAAAAAAA</p>
+            <ul class="list-unstyled text-muted d-flex">
+              <li class="pe-3">Me Gusta</li>
+              <li>Responder</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="d-flex">
+          <figure>
+            <img src="./images/avatares/oficial-gordillo.jpg" alt="imagen de perfil" class="img-profile" width="64"
+              height="64">
+          </figure>
+          <div class="ps-4">
+            <h4>Oficial Gordillo</h4>
+            <p>La calor que esta haciendo compadre hay que meterle un porron si o si</p>
+            <ul class="list-unstyled text-muted d-flex">
+              <li class="pe-3">Me Gusta</li>
+              <li>Responder</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="d-flex">
+          <figure>
+            <img src="./images/avatares/mirtha-legrand.jpg" alt="imagen de perfil" class="img-profile" width="64"
+              height="64">
+          </figure>
+          <div class="ps-4">
+            <h4>Mirtha Legrand</h4>
+            <p>La cerveza de peñon me recuerda a las giras que me pegaba con Colon </p>
+            <ul class="list-unstyled text-muted d-flex">
+              <li class="pe-3">Me Gusta</li>
+              <li>Responder</li>
+            </ul>
+          </div>
+        </article>
+      </section>
   </main>
   <footer>
     <article class="row pb-2">
-        <section class="col-12 col-md-4 col-lg-4">
-            <div class="center pt-4">
-            <a href="#"><img src="./images/footer/LOGO_BEER_TUC.png" alt="LOGO_BEER_TUC" class="log"></a>
-            </div>
-        </section>
-        <section class="col-12 col-md-4 col-lg-4 text-center pt-5 pb-5 pe-5 ps-5">
-            <h4>SOBRE NOSOTROS</h4>
-            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ex libero ratione esse. Illo eos, dolores ipsa saepe labore sequi laudantium, hic id repudiandae aspernatur eligendi vero consequatur, culpa nostrum.</P>
-        </section>
-        <section class="col-12 col-md-4 col-lg-4 pt-5 pb-5 center">
-            <a href="#"><i class="bi bi-facebook fs-2 me-3"></i></a>
-            <a href="#"><i class="bi bi-twitter fs-2 me-3"></i></a>
-            <a href="#"><i class="bi bi-instagram fs-2 me-3"></i></a>
-            <a href="#"><i class="bi bi-whatsapp fs-2"></i></a>
-        </section>
+      <section class="col-12 col-md-4 col-lg-4">
+        <div class="center pt-4">
+          <a href="#"><img src="./images/footer/LOGO_BEER_TUC.png" alt="LOGO_BEER_TUC" class="log"></a>
+        </div>
+      </section>
+      <section class="col-12 col-md-4 col-lg-4 text-center pt-5 pb-5 pe-5 ps-5">
+        <h4>SOBRE NOSOTROS</h4>
+        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ex libero ratione esse. Illo eos, dolores
+          ipsa saepe labore sequi laudantium, hic id repudiandae aspernatur eligendi vero consequatur, culpa nostrum.
+        </P>
+      </section>
+      <section class="col-12 col-md-4 col-lg-4 pt-5 pb-5 center">
+        <a href="#"><i class="bi bi-facebook fs-2 me-3"></i></a>
+        <a href="#"><i class="bi bi-twitter fs-2 me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-2 me-3"></i></a>
+        <a href="#"><i class="bi bi-whatsapp fs-2"></i></a>
+      </section>
     </article>
   </footer>
 
