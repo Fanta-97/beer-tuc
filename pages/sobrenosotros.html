@@ -23,20 +23,15 @@
 </head>
 <body>
   <header class="header">
-
-    <!--<nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <section class="container px-4 py-2">
-
-        
-        <a class="navbar-brand d-lg-none" href="#">
+        <a class="navbar-brand d-lg-none" href="../index.html">
           <img src="../images/logo/logo-responsive.png" alt="logo" class="logo-responsive img-fluid">
         </a>
 
-        <a class="navbar-brand d-none d-lg-flex" href="#">
-          <img src="./images/logo/logo-desktop.png" alt="logo" class="logo-desktop img-fluid">
+        <a class="navbar-brand d-none d-lg-flex" href="../index.html">
+          <img src="../images/logo/logo-desktop.png" alt="logo" class="logo-desktop img-fluid">
         </a>
-
-        
         <button class="navbar-toggler hamburguer-button" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -45,11 +40,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-lg-auto g-3">
-            <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
-              <a class="nav-link fs-5 active" aria-current="page" href="../index.html">Inicio</a>
+            <li class="nav-item ms-4 animacion-subrayado text-center">
+              <a class="nav-link fs-5 active" aria-current="page" href="./index.html">Inicio</a>
             </li>
-            <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
-              <button class="boton btn btn-lg btn-outline-dark border-0 mx-sm-auto nav-link" data-bs-toggle="modal" data-bs-target="#suscribirse">
+            <li class="nav-item ms-4 animacion-subrayado text-center">
+              <button class="boton btn btn-lg border-0 mx-sm-auto nav-link fs-5 active d-flex" data-bs-toggle="modal" data-bs-target="#suscribirse">
                 Suscribirse
               </button>
             </li>
@@ -82,74 +77,106 @@
                 </div>
               </div>
             </div>
-            <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
+            <li class="nav-item ms-4 animacion-subrayado text-center">
               <a class="nav-link fs-5" href="#">Contactanos</a>
             </li>
-            <li class="nav-item ms-4 animacion-subrayado text-center mb-sm-3">
-              <a class="nav-link fs-5" href="#">Sobre Nosotros</a>
+            <li class="nav-item ms-4 animacion-subrayado text-center">
+              <a class="nav-link fs-5" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
             </li>
-            <li class="nav-item ms-4 text-center nav-item-login mb-sm-3">
-              <a class="nav-link fs-5" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+            <li class="nav-item ms-4 text-center nav-item-login">
+              <a class="nav-link fs-5 px-3" href="#">Login</a>
             </li>
           </ul>
         </div>
       </section>
-    </nav> -->
+    </nav>
   </header>
-  <main>
-    <section class="container my-5 p-3 text-light seccion-comentarios">
+  <main class="pt-5 mt-5 mx-auto container">
+    <section class="my-5 p-3 text-light seccion-comentarios">
       <h2 class="container pb-3 border-bottom text-center fw-bold">¿Quienes somos?</h2>
-      <article class="d-flex">
-        <figure>
-          <img src="../images/logo/TITULO_NAVBAR2(1).png" alt="imagen de perfil" class="img-profile" width="600" height="400">
+      <article class="row d-flex align-items-center">
+        <figure class="col-12 col-md-6 col-lg-6 d-flex justify-content-center py-5">
+          <img src="../images/logo/TITULO_NAVBAR2(1).png" alt="imagen de perfil" class="img-fluid img-profile" width="600" height="400">
         </figure>
-        <div class="ps-4">
-          <h4 class="text-center mt-5 text-warning fw-bold">BEER TUC</h4>
-          <p class="text-center mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic facere nihil expedita magni exercitationem similique, obcaecati totam commodi tempore corporis! A nisi incidunt doloremque doloribus praesentium mollitia magnam in. Quam.</p>
+        <div class="col-12 col-md-6 col-lg-6 ps-4">
+          <h4 class="text-center text-warning fw-bold">BEER TUC</h4>
+          <p class="text-center mt-5">Somos unos tipos que nos gusta una buena birra y pasar buenos momentos, nuestro objetivo es hacerle llegar a la gente las experiencias y emociones que compartimos nosotros cada noche. En Beer-Tuc podrás encontrar una amplia gama de cervezerias para que disfrutes con tus amigos y familia.</p>
         </div>
       </article>
     </section>
-    <section class="container my-5 p-3 text-warning seccion-comentarios">
+    <section class="my-5 p-3 text-warning seccion-comentarios">
       <h2 class="container text-center"><i>"Amigos y cerveza fria, como minimo una vez al dia"</i></h2>
     </section>
     
-    <div class="row dos">
-      <div class="col-lg-4 image mx-auto">
-        <img src="../images/avatares/pichu.jpg" class="bd-placeholder-img rounded-circle ms-5" width="140" height="140">
+    <section class="row dos container mx-auto py-5 my-5">
+      <article class="col-lg-4 image d-flex flex-column justify-content-center p-3 ">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/integrantes-casiDevs/benjamin-brito.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        </figure>
+        <h2 class="fw-bold text-center">Benjamin Brito</h2>
+        <p class="text-center">"Benjamin Brito 22 años, estudiante de la facultad de educación física. En mis tiempos libres trabajo como Dj"</p>
+        <div class="mx-auto">
+          <i class="bi bi-instagram pe-3"></i>
+          <i class="bi bi-linkedin pe-3"></i>
+          <i class="bi bi-github pe-3"></i>
+        </div>
+      </article>
+
+      <article class="col-lg-4 image d-flex flex-column justify-content-center p-3 ">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/integrantes-casiDevs/emanuel-benitez.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        </figure>
         <h2 class="fw-bold text-center">Jose Emanuel Benitez</h2>
+        <p class="text-center">"José Emanuel Benitez, tengo 22 años, estudiante de la carrera de Ing. en Sistemas y en mis tiempo libres me gusta programar"</p>
+        <div class="mx-auto">
+          <i class="bi bi-instagram pe-3"></i>
+          <i class="bi bi-linkedin pe-3"></i>
+          <i class="bi bi-github pe-3"></i>
+        </div>
+      </article>
+
+      <article class="col-lg-4 image d-flex flex-column justify-content-center p-3 ">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/integrantes-casiDevs/carlos-aguilar.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        </figure>
+        <h2 class="fw-bold text-center">Carlos Aguilar</h2>
+        <p class="text-center">"Carlos Aguilar 24 años estudiante de ingeniería en sistemas, jugador del club Tucumán lawn tennis, hincha del club atlético San Martin"</p>
+        <div class="mx-auto">
+          <i class="bi bi-instagram pe-3"></i>
+          <i class="bi bi-linkedin pe-3"></i>
+          <i class="bi bi-github pe-3"></i>
+        </div>
+      </article>
+
+      <article class="col-lg-4 image d-flex flex-column justify-content-center p-3 ">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/integrantes-casiDevs/joaquin-navarro.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        </figure>
+        <h2 class="fw-bold text-center">Joaquin Navarro</h2>
+        <p class="text-center">"Joaquin Navarro, 24 años, me gusta el fernet y Soda Stereo. Se todas las referencias relacionadas a los simpsons y estudio programacion para algun dia hackear la NASA."</p>
+        <div class="mx-auto">
+          <i class="bi bi-instagram pe-3"></i>
+          <i class="bi bi-linkedin pe-3"></i>
+          <i class="bi bi-github pe-3"></i>
+        </div>
+      </article>
+
+      <article class="col-lg-4 image d-flex flex-column justify-content-center p-3">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/avatares/pichu.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        </figure>
+        <h2 class="fw-bold text-center">Paolo Posse</h2>
         <p class="text-center">"Cuando yo era un muchacho soñaba y pensaba cuál sería el primer miserable que me iba a reprochar el no ser joven… Ya no me lo pregunto más."</p>
-        <p class="text-center"><a class="btn btn-outline-white btn-dark" href="#">Curriculum &raquo;</a></p>
-      </div>
+        <div class="mx-auto">
+          <i class="bi bi-instagram pe-3"></i>
+          <i class="bi bi-linkedin pe-3"></i>
+          <i class="bi bi-github pe-3"></i>
+        </div>
+      </article>
+    </section>
 
-      <div class="col-lg-4 image mx-auto">
-        <img src="../images/avatares/oficial-gordillo.jpg" class="bd-placeholder-img rounded-circle ms-5" width="140" height="140">
-        <h2 class="fw-bold text-center">Santiago Roma</h2>
-        <p class="text-center">"Uno entra al baile y no espera comprensión"</p>
-        <p class="text-center"><a class="btn btn-outline-white btn-dark" href="#">Curriculum &raquo;</a></p>
-      </div>
-
-      <div class="col-lg-4 image mx-auto">
-        <img src="../images/avatares/mirtha-legrand.jpg" class="bd-placeholder-img rounded-circle ms-5" width="140" height="140">
-        <h2 class="fw-bold text-center">Daniel Teseira</h2>
-        <p class="text-center">" Siempre es recomendable recorrer la vida a contramano"</p>
-        <p class="text-center"><a class="btn btn-outline-white btn-dark" href="#">Curriculum &raquo;</a></p>
-      </div>
-
-      <div class="col-lg-6 image mx-auto" >
-        <img src="../images/avatares/la-mona-gimenez.jpg" class="bd-placeholder-img rounded-circle ms-5" width="140" height="140">
-        <h2 class="fw-bold text-center">Ulises Yampe</h2>
-        <p class="text-center">Se unió casi al ultimo pero hizo bastante</p>
-        <p class="text-center"><a class="btn btn-outline-white btn-dark" href="#">Curriculum &raquo;</a></p>
-      </div>
-
-      <div class="col-lg-6 image mx-auto">
-        <img src="../images/avatares/fan-de-wanda.jpg" class="bd-placeholder-img rounded-circle ms-5" width="140" height="140">
-        <h2 class="fw-bold text-center">Josesito de la gente</h2>
-        <p class="text-center">A meterle pata pa que terminemos</p>
-        <p class="text-center"><a class="btn btn-outline-white btn-dark" href="#">Curriculum &raquo;</a></p>
-      </div>
-      </div>
   </main>
+
     <footer>
         <article class="row pb-2">
             <section class="col-12 col-md-4 col-lg-4">

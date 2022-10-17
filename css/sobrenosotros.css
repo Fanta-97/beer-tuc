@@ -4,7 +4,9 @@
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  
+  .col-lg-4 img {
+    transition: all .5s;
+  }
   .col-lg-4 img:hover{
     transform: scale(1.2);
     transition: all 0.5s;
@@ -16,7 +18,16 @@
     justify-content: center;
     align-items: center;  
   }
-  
+
+  .bi {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .3s all;
+  }
+
+  .bi:hover {
+    color: rgb(71, 13, 129);
+  }
   /* RESPONSIVE CSS--------- */
   
   @media (min-width: 40em) {
